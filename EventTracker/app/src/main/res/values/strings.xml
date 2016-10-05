@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Event Tracker</string>
+
+    <!-- Activity Titles-->
+    <string name="title_activity_detailed_view">Event Details</string>
+    <string name="title_activity_my_events">My Events</string>
+    <string name="title_activity_add_event_form">Add Event</string>
+    <string name="title_activity_detailed_created_view">Event Details</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_Events_and_Festivals">Events &amp; Festivals</string>
+
+    <!-- Buttons -->
+    <string name="trackButton">Track</string>
+    <string name="MyEventsButton">My Events</string>
+    <string name="EventsFestivalsButton">Events &amp; Festivals</string>
+    <string name="CreateButton">Create Event</string>
+    <string name="CancelButton">Cancel</string>
+    <string name="SaveButton">Save</string>
+
+    <!-- Hint Strings -->
+    <string name="EventHint">Event Name</string>
+    <string name="StartTimeHint">Start Time</string>
+    <string name="EndTimeHint">End Time</string>
+    <string name="AddressHint">Address</string>
+    <string name="NotesHint">Notes</string>
+
+    <!--Layout header strings -->
+    <string name="eventHeader"> <u>Event Name:</u></string>
+    <string name="BeginShowHeader"><u>Date:</u></string>
+    <string name="AddressHeader"> <u>Address:</u></string>
+    <string name="CategoryHeader"> <u>Type of Event:</u></string>
+    <string name="LocationHeader"> <u>Location:</u></string>
+    <string name="OrgNameHeader"> <u>Organization:</u></string>
+    <string name="TimeBeginHeader"> <u>Time:</u></string>
+    <string name="OrgContactHeader"> <u>Organization Contact Information:</u></string>
+    <string name="LongDescHeader"> <u>Description:</u></string>
+    <string name="IntersectionHeader"> <u>Intersection:</u></string>
+    <string name="TTCHeader"> <u>TTC Bus Route:</u></string>
+    <string name="PerformanceHeader"> <u>Performances:</u></string>
+    <string name="AddressLinkHeader"> <u>Map Link:</u></string>
+    <string name="EventLinkHeader"> <u>Event Webpage:</u></string>
+
+    <string name="Month"> <u>Month:</u></string>
+    <string name="Date"> <u>Day:</u></string>
+    <string name="Year"> <u>Year:</u></string>
+
+    <!--Menu items -->
+    <string name="action_settings">Settings</string>
+    <string name="action_help">Help</string>
+
+    <!--Setting strings -->
+    <string name="setting_notify">Notification:</string>
+    <string name="setting_theme">Theme:</string>
+
+    <!--Help strings - FAQ -->
+    <string name="FAQ_HelpTitle"><u><b>FAQ</b></u></string>
+    <string name="Help_Q1">Q:Events &amp; Festivals isn\'t loading, what\'s wrong?</string>
+    <string name="Help_A1">A:Event Tracker requires an internet connection to provide up-to-date events.</string>
+    <string name="Help_Q2">Q:I have an internet connection and it still isn\'t loading, what do I do? </string>
+    <string name="Help_A2">A:Event Tracker requires a stable internet connection, it could be a problem in your area.
+                            Contact support at vmmirabella@myseneca.ca if the problem persists.</string>
+    <string name="Help_Q3">Q:How do I track an event I would like to go to? </string>
+    <string name="Help_A3">A:On the Events &amp; Festivals page you can click an event to view more details about it.
+                            On the details page there is a \'Track\' button in the top right if you wish to track it.</string>
+    <string name="Help_Q4">Q:I wish to edit/delete an event on My Events, how do I do it?</string>
+    <string name="Help_A4">A:On the My Events page you can select Edit or Delete by performing a long click(hold for 1–2 seconds) on the desired event. Only events you have created can be edited.</string>
+    <string name="Help_Q5">Q:Is there a way to turn notifications off?</string>
+    <string name="Help_A5">A:Yes, you can turn off notifications by opening the menu, select Settings and switching \'Notification\' to off</string>
+    <string name="Help_Q6">Q:I don\'t like the default theme, is there a way to change it?</string>
+    <string name="Help_A6">A:Yes, you can switch between dark and light themes in Settings</string>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="keys">
+        <item>unid</item>
+        <item>EventName</item>
+        <item>DateBeginShow</item>
+        <item>CategoryList</item>
+        <item>PresentedByOrgName</item>
+        <item>TimeBegin</item>
+        <item>DateEndShow</item>
+        <item>TimeEnd</item>
+        <item>LongDesc</item>
+        <item>OrgContactPhone</item>
+        <item>OrgContactExt</item>
+        <item>OrgContactEMail</item>
+        <item>Location</item>
+        <item>Intersection</item>
+        <item>MapAddress</item>
+        <item>TTC</item>
+        <item>EventURL</item>
+        <item>Performance</item>
+        <item>Address</item>
+        <item>Type</item>
+    </string-array>
+
+
+</resources>

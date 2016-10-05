@@ -1,0 +1,104 @@
+
+# Battle_enums.gd
+
+```python
+const ENTITY_LEVEL = 20
+
+const ENTITY_EXP = 21
+
+const ENTITY_EXP_CURRENT = 22
+
+const ENTITY_EXP_TOTAL = 23
+```
+
+# Entity.gd
+
+```python
+var attr - added:
+
+enums.ENTITY_LEVEL : 1,
+
+enums.ENTITY_EXP : {enums.ENTITY_EXP_CURRENT:0, enums.ENTITY_EXP_TOTAL: 100}
+
+func get_job():
+	return attr[enums.ENTITY_JOB]
+
+func set_job_statboost(job):
+	attr[enums.ENTITY_HITPOINTS][enums.ENTITY_HITPOINTS_TOTAL] += job.statBoost[enums.ENTITY_HITPOINTS]
+	attr[enums.ENTITY_MANA][enums.ENTITY_MANA_TOTAL] += job.statBoost[enums.ENTITY_MANA]
+	attr[enums.ENTITY_SPEED] += job.statBoost[enums.ENTITY_SPEED]
+	attr[enums.ENTITY_INTELLECT] += job.statBoost[enums.ENTITY_INTELLECT]
+	attr[enums.ENTITY_DEXTERITY] += job.statBoost[enums.ENTITY_DEXTERITY]
+	attr[enums.ENTITY_STRENGTH] += job.statBoost[enums.ENTITY_STRENGTH]
+
+func get_level():
+	return attr[enums.ENTITY_LEVEL]
+```
+# State_Magic.gd
+
+```python
+func create_window() - added:
+
+var level = unit[enums._ENTITY].get_attribute(enums.ENTITY_LEVEL)
+
+var magic = job.get_magic()
+```
+
+in for k in keys for loop added if check before window buttons are created:
+
+```python
+if (temp.get_level_requirement() <= level):
+			window.add_button(temp.get_name(), temp.get_description())
+```
+# global.gd
+
+```python
+func setup_units() in for loop for Freindly units added:
+
+var job =units[i][enums._ENTITY].get_job()
+units[i][enums._ENTITY].set_job_statboost(job)
+```
+
+# Effect_MagicDamage.gd
+
+```python
+func onCast() added:
+
+cost = {"cost_type": "magic", "cost_value":get_cost()} #need to make an enum?
+```
+
+and added:
+
+`entity_mana` should probably be `job_mana_cost` to be inline with `job_cooldown`
+
+```python
+func get_cost():
+	return job.magic[name][enums.ENTITY_MANA]
+```
+
+#Effect.gd
+
+added:
+
+```python
+var cost
+var canCast = false
+var ability_hasDot = false
+
+func onCast() added:
+if (cost["cost_type"] == "magic"):
+		if (origin[enums._ENTITY].use_mana(cost["cost_value"])):
+			canCast = true
+	elif(cost["cost_type"] == "cooldown"):
+		canCast=false
+```
+
+and then everything is surrounded by an if statement -> `if(canCast)`
+
+`if(ability_hasDot)):` changed from `if(job.magic[name].has("dot"):`
+
+`cost["cost_type"]` and `cost["cost_value"]` used in `Effect` and `Effect_MagicDamage`
+
+# Misc
+
+* DOT now works and enums have unique numbers
