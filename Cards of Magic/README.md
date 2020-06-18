@@ -4,7 +4,6 @@ _Currently a work in progress_. Currently some combat mechanines have been implm
 # Code
 Code (majority) can be viewed starting [here](https://github.com/vmmirabella/projects/tree/master/Cards%20of%20Magic/Appliction/TurnBasedBattle/scripts) as well as in the subsequent folders
 
-## Project has been shifted to Unity
 
 
 
