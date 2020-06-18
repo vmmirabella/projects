@@ -1,0 +1,12 @@
+<Items>
+  <Item>
+    <ItemName>TestItem</ItemName>
+    <ItemID>1</ItemID>
+    <ItemTypes>WEAPON</ItemTypes>  
+  </Item>
+  <Item>
+    <ItemName>TestItem2</ItemName>
+    <ItemID>2</ItemID>
+    <ItemTypes>WEAPON</ItemTypes>
+  </Item>
+</Items>
