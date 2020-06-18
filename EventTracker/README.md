@@ -9,10 +9,10 @@ This appliction allows users to find and track upcoming events and festivals in 
 * Notifiction of upcoming events
  * A notifiction of events within 3 days will be displayed. The user can opt out of notifictions in the options menu
 * User can switch between light and dark themes in the options menu
-* All data for events/festivals in Toronto is updated live based on the dataset found here: http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=8b0689fe9c18b210VgnVCM1000003dd60f89RCRD  (uses the XML feed dataset)
+* All data for events/festivals in Toronto is updated live based on the dataset found [here](http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=8b0689fe9c18b210VgnVCM1000003dd60f89RCRD)  (uses the XML feed dataset)
 
 # Code
-Code can be viewed starting [here] (https://github.com/vmmirabella/projects/tree/master/EventTracker/Appliction/app/src/main/java/vm/eventtracker) as well in the subsequent folders
+Code can be viewed starting [here](https://github.com/vmmirabella/projects/tree/master/EventTracker/Appliction/app/src/main/java/vm/eventtracker) as well in the subsequent folders
 
 
 
