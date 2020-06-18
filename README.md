@@ -2,7 +2,7 @@
 * Card of Magic
   * Turn-based game done through the Godot engine
 * Crazy Eights (Java)
-  * Crazy Eights card game made through design patterns: Abstract Factory, Factory Method, Strategy and Template
+  * Crazy Eights card game made with design patterns: Abstract Factory, Factory Method, Strategy and Template
 * Event Tracker
   * Android appliction that allows users to track events in Toronto
 * Invoice Management (Laravel)
